@@ -1,0 +1,9 @@
+#!/bin/sh
+pyftsubset ttf/EBGaramond08-Regular.ttf \
+    --gids-file=./gids \
+    --unicodes-file=./unicodes \
+    --layout-features="clig, liga, calt, dlig, kern" \
+    --no-subset-tables+=FFTM \
+    --recommended-glyphs \
+    --verbose \
+    --output-file="EBGaramond08-Regular.ttf"
